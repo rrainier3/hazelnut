@@ -1,0 +1,143 @@
+/* ========= PRIMARY COLOR ========== */
+.color-primary {
+color:#2ecc71!important;
+}
+.bg-primary {
+background-color:#2ecc71!important;
+}
+.outline-icon:hover {
+background-color:#2ecc71;
+border:solid 2px #2ecc71;
+}
+.blog-wrapper .read-more {
+color:#2ecc71;
+}
+.img-thumb .img-thumb-hover-left:hover i,.img-thumb .img-thumb-hover-right:hover i,.img-thumb .img-thumb-hover i:hover {
+background-color:#2ecc71;
+border:2px solid #2ecc71;
+}
+#carousel .carousel-control:hover {
+border:2px solid #2ecc71;
+background-color:#2ecc71;
+}
+.scrollup:hover {
+background-color:#2ecc71;
+}
+#pricing .col-md-4:hover .pricing-table-header {
+background-color:#2ecc71;
+}
+#pricing .col-md-4:hover .pricing-table-features li:last-child {
+background-color:#2ecc71;
+}
+#isotope-filter li a {
+background-color:#2ecc71;
+}
+.counter {
+color:#2ecc71;
+}
+.pagination > li > a:hover,.pagination > li > span:hover,.pagination > li > a:focus,.pagination > li > span:focus {
+background-color:#2ecc71;
+border-color:#2ecc71;
+}
+.pagination > .active > a,.pagination > .active > span,.pagination > .active > a:hover,.pagination > .active > span:hover,.pagination > .active > a:focus,.pagination > .active > span:focus {
+background-color:#2ecc71;
+border-color:#2ecc71;
+}
+.pagination > .active > a,.pagination > .active > span,.pagination > .active > a:hover,.pagination > .active > span:hover,.pagination > .active > a:focus,.pagination > .active > span:focus {
+background-color:#2ecc71;
+border-color:#2ecc71;
+}
+.nav-tabs > li.active > a,.nav-tabs > li.active > a:hover,.nav-tabs > li.active > a:focus {
+color:#2ecc71;
+}
+#accordion .panel a.selected .panel-heading {
+background-color:#2ecc71;
+}
+.nav-tabs#tabs > li.active > a {
+border-bottom:3px solid #2ecc71;
+}
+/* ===== SHORTCODE ICON DEMO ===== */
+.shortcode-icon-demo i {
+color:#2ecc71;
+}
+.btn-primary {
+background-color:#2ecc71;
+}
+.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary {
+background-color:#2ecc71;
+}
+.btn-primary.btn-outline,a.btn-primary.btn-outline:link,a.btn-primary.btn-outline:visited {
+border:2px solid #2ecc71;
+color:#2ecc71;
+}
+.btn-primary.btn-outline:hover,.btn-primary.btn-outline:active,.btn-primary.btn-outline:focus,a.btn-primary.btn-outline:hover,a.btn-primary.btn-outline:active,a.btn-primary.btn-outline:focus {
+border:2px solid #2ecc71;
+background-color:#2ecc71;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+background-color: #2ecc71;
+border-color: #2ecc71;
+}
+.navbar-default .navbar-brand {
+background-color:#2ecc71;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li.active > a, .navbar-default .navbar-nav > li:hover > a, .navbar-default .navbar-nav > li.active > a:hover {
+color:#2ecc71;
+border-bottom:4px solid #2ecc71;
+}
+.navbar-default .navbar-nav > li.active > a:focus {
+color:#2ecc71;
+border-bottom:4px solid #2ecc71;
+}
+.dropdown-menu > li:hover > a, .dropdown-menu > li > a:hover {
+color:#2ecc71;
+}
+.tparrows:hover {
+background-color: #2ecc71;
+border: solid 2px #2ecc71;
+}
+/* ========= SECONDARY COLOR ========== */
+.color-secondary {
+color:#BF63FF!important;
+}
+
+.bg-secondary {
+background-color:#BF63FF!important;
+}
+.blog-wrapper .read-more:hover {
+color:#BF63FF;
+}
+.social-icons i:hover {
+border-color:#BF63FF;
+color:#BF63FF;
+}
+#sidebar a.tag:hover {
+background-color:#BF63FF;
+}
+.footer i:hover {
+border-color:#BF63FF;
+color:#BF63FF;
+}
+blockquote {
+border-left:4px solid #BF63FF;
+}
+a:active,a:hover {
+color:#BF63FF;
+}
+.btn-secondary {
+background-color:#BF63FF;
+}
+
+.btn-secondary:hover,.btn-secondary:focus,.btn-secondary:active,.btn-secondary.active,.open .dropdown-toggle.btn-secondary {
+background-color:#BF63FF;
+}
+.btn-secondary.btn-outline,a.btn-secondary.btn-outline:link,a.btn-secondary.btn-outline:visited {
+border:2px solid #BF63FF;
+color:#BF63FF;
+
+}
+
+.btn-secondary.btn-outline:hover,.btn-secondary.btn-outline:active,.btn-secondary.btn-outline:focus,a.btn-secondary.btn-outline:hover,a.btn-secondary.btn-outline:active,a.btn-secondary.btn-outline:focus {
+border:2px solid #BF63FF;
+background-color:#BF63FF;
+}

@@ -1,0 +1,270 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Cre-animate.js - Onscroll Animations</title>
+	
+	<meta name="description" content="Cre-animate.js is a easy way to add onscroll animations to any element on your website. You have full control over the animation type, speed, delay, scroll offset and easing effect.">
+	<meta name="author" content="CreativelyCoded.com">
+	<meta name="copyright" content="CreativelyCoded.com">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2014-02-09T00:00:00+01:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#EEEEEE;color:#383838;}
+		::-moz-selection{background:#333636;color:#00DFFC;}
+		::selection{background:#333636;color:#00DFFC;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#008C9E;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #008C9E, #006673);
+			  background-image: -ms-linear-gradient(top, #008C9E, #006673);
+			  background-image: -webkit-gradient(linear, 0 0, 0 008C9E%, from(#343838), to(#006673));
+			  background-image: -webkit-linear-gradient(top, #008C9E, #006673);
+			  background-image: -o-linear-gradient(top, #008C9E, #006673);
+			  background-image: linear-gradient(top, #008C9E, #006673);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008C9E', endColorstr='#006673', GradientType=0);
+			  border-color: #006673 #006673 #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #008C9E #008C9E #bfbfbf;
+		  background-color: #006673;
+		}
+		hr{border-top:1px solid #D4D4D4;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#343838;color:#FFFFFF;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #494F4F;-moz-text-shadow:1px 1px 0px #494F4F;text-shadow:1px 1px 0px #494F4F;}
+		#documenter_sidebar ul{border-top:1px solid #212424;}
+		#documenter_sidebar ul a{border-top:1px solid #494F4F;border-bottom:1px solid #212424;color:#FFFFFF;}
+		#documenter_sidebar ul a:hover{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_sidebar ul a.current{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-cre-animatejs-onscroll-animations">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#introduction" title="Introduction">Introduction</a></li>
+			<li><a href="#implementation" title="Implementation">Implementation</a></li>
+			<li><a href="#adding_animations" title="Adding Animations">Adding Animations</a></li>
+			<li><a href="#advanced" title="Advanced">Advanced</a></li>
+			<li><a href="#demo" title="Demo">Demo</a>
+				<ul>
+					<li><a href="#demo_a_href"_cre_animatejs_demohtml"_target"_blank"view_a_demostration_of_the_animations_gt_gt_gt_a">View a Demostration of the Animations &gt;&gt;&gt;</a>
+				</ul>
+			</li>
+			<li><a href="#animation_generator" title="Animation Generator">Animation Generator</a>
+				<ul>
+					<li><a href="#animation_generator_a_href"_cre_animatejs_cre_animation_generatorhtml"_target"_blank"animation_generator_choose_your_options_and_have_the_code_generated_for_you_a">Animation Generator - Choose your options and have the code generated for you</a>
+				</ul>
+			</li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright CreativelyCoded.com 2014<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Cre-animate.js - Onscroll Animations</h1>
+	
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	<li>created: 02/09/2014</li>
+	<li>latest update: 02/9/2014</li>
+	<li>by: CreativelyCoded.com</li>
+	<li><a href=""></a></li>
+	<li>email: <a href="mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#114;&#101;&#97;&#116;&#105;&#118;&#101;&#108;&#121;&#99;&#111;&#100;&#101;&#100;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#114;&#101;&#97;&#116;&#105;&#118;&#101;&#108;&#121;&#99;&#111;&#100;&#101;&#100;&#46;&#99;&#111;&#109;</a></li>
+	</ul>
+	<p></p>
+	</section>
+	
+	<section id="introduction">
+	<div class="page-header"><h3>Introduction</h3><hr class="notop"></div>
+<p>
+	Cre-animate.js was created to be an incredibly simple way to add onscroll animations to any of your websites elements. This includes text, images, videos any html tag you want can be anmated into view.<br>
+	<br>
+	You have full control over the animation type, speed, delay, scroll offset and easing effect.</p>
+<ul>
+	<li>
+		<strong>Animation Type</strong> refers to how the element will animate into view. (Example: Fade-In, Slide-Up)<br>
+		There are 11 options in total for animation types. More on this later.<br>
+		&nbsp;</li>
+	<li>
+		<strong>Speed </strong>is the time it will take for the animation to take place in milliseconds. 1000ms is equal to 1 second.<br>
+		&nbsp;</li>
+	<li>
+		<strong>Delay </strong>is particularily useful when animating multiple elements on the same line. You can have all the elements animations take place at the same trigger point, but they can all have different delay times in milliseconds which will allow them to animate into view at different times.<br>
+		&nbsp;</li>
+	<li>
+		<strong>Scroll Offset</strong> is the &quot;trigger point&quot; or point on the screen in which the animation will start to take place. A offset value of<strong> &quot;0&quot;</strong> means the animation will take place when the element hits the top of the viewport(screen). A value of <strong>&quot;100&quot;</strong> means the element will animate into view as it enters the viewport(screen). Scroll offset can have a value of anything between 0-100.<br>
+		&nbsp;</li>
+	<li>
+		<strong>Easing Effect</strong> is the way the element will animate into view from start to finish. (Example: An easing effect of &quot;Linear&quot; means the element will animate into view at the same speed from start to finish. An easing effect of &quot;EaseIn&quot; means the element will start animating slowly and end quickly.) There are 27 easing effects to have fun with.</li>
+</ul>
+</section>
+<section id="implementation">
+	<div class="page-header"><h3>Implementation</h3><hr class="notop"></div>
+<p>
+	Cre-animate.js was created to be incredibly easy to implement.<br>
+	<br>
+	You must include 2 files on your webpage.<br>
+	<strong>jQuery:</strong><br>
+	&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js&quot;&gt;&lt;/script&gt;<br>
+	<strong>Cre-animate.js:</strong><br>
+	&lt;script type=&quot;text/javascript&quot; src = &quot;js/jquery.cre-animate.js&quot;&gt;&lt;/script&gt;<br>
+	Remember to ensure you have the correct path to the jquery.cre-animate.js file.<br>
+	<br>
+	Once you include both of these files on your page, you are ready to start animating!</p>
+</section>
+<section id="adding_animations">
+	<div class="page-header"><h3>Adding Animations</h3><hr class="notop"></div>
+<p>
+	Adding animations to elements is very simple.<br>
+	<br>
+	There are two ways you can add animations to elements.<br>
+	<br>
+	<strong>1. Use the Animation Generator included. <a href="../Cre-animate.js/cre-animation-generator.html" target="_blank">cre-animation-generator.html</a></strong></p>
+<p>
+	This Generator will allow you to select the options for your animations and generate a wrapper code.<br>
+	The wrapper code is a &lt;div&gt; tag that you will place the elements code inside of that you want animated.<br>
+	Example: &lt;div class=&quot;cre-animate&quot; animation-options&gt;Your text or image or any html content goes here&lt;/div&gt;<br>
+	<br>
+	It&#39;s that simple. Where you see &quot;animation-options&quot; there will be multiple data-attribute tags for your specified options.<br>
+	<br>
+	Re-load your page and scroll to the element to watch the onscroll animation take place!</p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>2. Advanced Options - Manually generate the animation code.</strong><br>
+	Details below.</p>
+</section>
+<section id="advanced">
+	<div class="page-header"><h3>Advanced</h3><hr class="notop"></div>
+<p>
+	If you would like to get down and generate the animation code yourself this section will explain exactly how the script works.<br>
+	<br>
+	There are two ways you can add the required animation information to an element.<br>
+	<br>
+	1. Create a wrapper &lt;div&gt; tag around the element you wish to animate. This is what the <strong><a href="../Cre-animate.js/cre-animation-generator.html" target="_blank">Animation Generator</a></strong> does.<br>
+	Add the class=&quot;cre-animate&quot; to the div. The script searches for elements with this class and runs the script to animate.<br>
+	<br>
+	or<br>
+	<br>
+	2. You can add the class=&quot;cre-animate&quot; directly to the element you wish to animate. This sometimes causes unexpected results as the cre-animate class has a position set to relative.<br>
+	<br>
+	&nbsp;</p>
+<p>
+	Once you create the wrapper &lt;div class=&quot;cre-animate&quot;&gt; or add the class=&quot;cre-animate to your element the following data-attributes can be applied.<br>
+	&nbsp;</p>
+<p>
+	<strong>Data-Animation:</strong><br>
+	Add <strong>data-animation=&quot;animation-type&quot;</strong> to the wrapper class.<br>
+	&quot;animation-type&quot; value can be any of the following:<br>
+	fade-in<br>
+	fade-out<br>
+	slide-down-from-top<br>
+	slide-in-from-right<br>
+	slide-up-from-bottom<br>
+	slide-in-from-left<br>
+	scale-up<br>
+	scale-down<br>
+	rotate<br>
+	flip-y-axis<br>
+	flip-x-axis<br>
+	&nbsp;</p>
+<p>
+	<strong>Data-Speed:</strong><br>
+	Add <strong>data-speed=&quot;speed&quot;</strong> to the wrapper class.<br>
+	&quot;speed&quot; value can be any numerical value for how quickly the animation will take place. The speed attribute is in milliseconds. For example a value of &quot;1000&quot; will equal 1 second.<br>
+	&nbsp;</p>
+<p>
+	<strong>Data-Delay:</strong><br>
+	Add <strong>data-delay=&quot;delay time&quot;</strong> to the wrapper class.<br>
+	&quot;delay-time&quot; value can be any numerical value for delaying the animation. This attribute is again in milliseconds.</p>
+<p>
+	<br>
+	<strong>Data-Offset:</strong><br>
+	Add <strong>data-offset=&quot;trigger-point&quot;</strong> to the wrapper class.<br>
+	&quot;trigger-point&quot; value can be any number from 0-100 which indicates the trigger point in percent where the animation will take place. 0% = top of viewport, 100% = bottom of viewport, 50% = middle of the screen.<br>
+	The element will not animate until the top of the element reaches the trigger point specified.</p>
+<p>
+	<br>
+	<strong>Data-Easing:</strong><br>
+	Add <strong>data-easing=&quot;easing value&quot;</strong> to the wrapper class.<br>
+	&quot;easing value&quot; can be any of the following 27 easing options:<br>
+	ease<br>
+	in<br>
+	out<br>
+	in-out<br>
+	snap<br>
+	easeOutCubic<br>
+	easeInOutCubic<br>
+	easeOutCirc<br>
+	easeInOutCirc<br>
+	easeInExpo<br>
+	easeOutExpo<br>
+	easeInOutExpo<br>
+	easeInQuad<br>
+	easeOutQuad<br>
+	easeInOutQuad<br>
+	easeInQuart<br>
+	easeOutQuart<br>
+	easeInOutQuart<br>
+	easeInQuint<br>
+	easeOutQuint<br>
+	easeInOutQuint<br>
+	easeInSine<br>
+	easeOutSine<br>
+	easeInOutSine<br>
+	easeInBack<br>
+	easeOutBack<br>
+	easeInOutBack</p>
+<p>
+	When you&#39;re complete your code should look something like this:<br>
+	<strong>&lt;div class=&quot;cre-animate&quot; data-animation=&quot;fade-in&quot; data-speed=&quot;1000&quot; data-delay=&quot;500&quot; data-offset=&quot;50%&quot; data-easing=&quot;easeInOutBack&quot;&gt;Your Object or Element to be animated goes here&lt;/div&gt;</strong><br>
+	&nbsp;</p>
+</section>
+<section id="demo">
+	<div class="page-header"><h3>Demo</h3><hr class="notop"></div>
+<h4 id="demo_a_href"_cre_animatejs_demohtml"_target"_blank"view_a_demostration_of_the_animations_gt_gt_gt_a"><a href="../Cre-animate.js/demo.html" target="_blank">View a Demostration of the Animations &gt;&gt;&gt;</a></h4>
+</section>
+<section id="animation_generator">
+	<div class="page-header"><h3>Animation Generator</h3><hr class="notop"></div>
+<h4 id="animation_generator_a_href"_cre_animatejs_cre_animation_generatorhtml"_target"_blank"animation_generator_choose_your_options_and_have_the_code_generated_for_you_a"><a href="../Cre-animate.js/cre-animation-generator.html" target="_blank">Animation Generator - Choose your options and have the code generated for you</a></h4>
+</section>
+
+	</div>
+</body>
+</html>

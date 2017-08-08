@@ -1,0 +1,226 @@
+/* =================================  */
+/* =========== MENU STYLES ===========  */
+/* =================================  */
+
+/* ===== START NAVIGATION MENU ===== */
+.navbar-toggle {
+margin-top: 10px;
+border-radius: 60px;
+font-size: 18px;
+line-height: 1;
+padding: 10px 8px;
+color: #FFF;
+border: 0;
+text-align: center;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+background-color: #01CFCA;
+color: #FFF;
+border-color: #01CFCA;
+}
+.navbar-nav {
+margin: 0;
+}
+.navbar-default {
+font-family:'Open Sans', sans-serif;
+font-weight: 700;
+font-size: 14px;
+background-color: #272d35;
+border: 0;
+border-radius: 0;
+height: 60px;
+margin: 0;
+-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+ -webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+.navbar-default .navbar-brand {
+font-weight:800;
+color:#FFF !important;
+background-color:#01CFCA;
+height: 60px;
+padding-left: 20px;
+padding-right: 24px;
+padding-top: 20px;
+font-size:18px;
+}
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li.dropdown > a:focus {
+position: relative;
+padding-top: 23px;
+padding-bottom: 19px;
+padding-right: 20px;
+padding-left: 20px;
+line-height: 1;
+text-transform: uppercase;
+background-color:#272d35;
+color: #FFF;
+border-bottom:4px solid #272d35;
+z-index: 1;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li.active > a, .navbar-default .navbar-nav > li:hover > a, .navbar-default .navbar-nav > li.active > a:hover {
+background-color:#2f3640;
+color:#01CFCA;
+border-bottom:4px solid #01CFCA;
+}
+.navbar-default .navbar-nav > li.active > a:focus {
+background-color:#2f3640;
+color:#01CFCA;
+border-bottom:4px solid #01CFCA;
+}
+.navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+    overflow-x: visible;
+    border-top: medium none;
+    box-shadow: none;
+}
+.navbar-static-top,
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  border-radius: 0;
+  opacity: 1;
+ top: 0;
+ position: fixed;
+}
+.dropdown-menu {
+box-shadow: none;
+font-size: 11px;
+border-radius: 0;
+background-color:#2f3640;
+color: #FFF;
+border-top: none;
+z-index: 1;
+padding: 0;
+margin: 0;
+}
+.dropdown-menu > li > a {
+padding:10px 20px;
+    color: #FFF;
+font-weight: 700;
+text-transform: uppercase;
+background-color:#2f3640;
+}
+.dropdown-menu > li:hover > a, .dropdown-menu > li > a:hover {
+background-color:#2f3640;
+color:#01CFCA;
+}
+/* ========== MENU WILL DROP ON HOVER FOR LARGE SCREENS ========== */
+@media (min-width: 991px)
+ {
+ .dropdown .dropdown-menu {
+display: block;
+visibility:hidden;
+    opacity: 0; 
+    height: 0;
+    overflow: hidden;
+	transition-property:opacity;
+transition-duration: .25s;
+transition-delay: .25s;
+
+/* Safari */
+-webkit-transition-property:opacity; 
+-webkit-transition-duration: .25s;
+-webkit-transition-delay: .25s;
+ }
+.dropdown:hover .dropdown-menu {
+opacity: 1;
+visibility:visible;
+    height: auto;
+	  color: #777;
+ }
+ }
+ /* =====*/
+/* ===== END NAVIGATION MENU ===== */
+
+/* ==================================================  */
+/* === POINT IN WHICH MENU GOES RESPONSIVE - COLLAPSE POINT ===  */
+/* ==================================================  */
+@media (min-width: 1100px) {
+  .navbar-toggle {
+    display: none;
+  }
+  .navbar > .container .navbar-brand,
+  .navbar > .container-fluid .navbar-brand {
+    margin-left: -15px;
+  }
+  .container > .navbar-header,
+  .container-fluid > .navbar-header,
+  .container > .navbar-collapse,
+  .container-fluid > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    box-shadow: none;
+  }
+  .navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+  .navbar-collapse.in {
+    overflow-y: visible;
+  }
+  .navbar-fixed-top .navbar-collapse,
+  .navbar-static-top .navbar-collapse,
+  .navbar-fixed-bottom .navbar-collapse {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar {
+    border-radius: 0;
+  }
+  .navbar-header {
+    float: left;
+  }
+  .navbar-right .dropdown-menu {
+    right: 0;
+    left: auto;
+  }
+  .navbar-right .dropdown-menu-left {
+    right: auto;
+    left: 0;
+  }
+  .navbar-left {
+    float: left !important;
+  }
+  .navbar-right {
+    float: right !important;
+  }
+  .navbar-nav {
+    float: left;
+    margin: 0;
+  }
+  .navbar-nav > li {
+    float: left;
+  }
+  .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .navbar-nav.navbar-right:last-child {
+    margin-right: -15px;
+  }
+}
+
+@media (min-width: 768px) {
+.navbar .container {
+  width: 100%;
+  }
+}
+@media (min-width: 992px) {
+.navbar .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+.navbar .container {
+    width: 1170px;
+  }
+}

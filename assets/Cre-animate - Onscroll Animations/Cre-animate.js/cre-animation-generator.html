@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src = "js/jquery.cre-animate.min.js"></script>
+
+<link href="css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="css/icomoon.css" media="screen" rel="stylesheet" type="text/css">
+<link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47434219-1', 'creativelycoded.com');
+  ga('send', 'pageview');
+
+</script>
+<div class="container">
+<div class="cre-animate"  data-animation="slide-in-from-right" data-speed="1000" data-delay="500" data-offset="50%" data-easing="easeInOutBack">
+<h1 style="color: #1dc6df; font-size: 60px"><strong>Cre-animation Generator</strong></h1>
+</div>
+<h3>Implementation:</h3>
+<p>
+To get Cre-animate.js working on your site all you have to do is include both jQuery and Cre-animate.js on your site.<br/>
+&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&gt;&lt;/script&gt;<br/>
+&lt;script type="text/javascript" src = "jquery.cre-animate.js"&gt;&lt;/script&gt;<Br/>
+<br/>
+Then use the generator below to generate the html wrapper code for the element you wish to animate.
+</p>
+<hr/>
+<h4>Choose Type of Animation:</h4>
+<select id="animationType">
+  <option value="fade-in">Fade-In</option>
+  <option value="fade-out">Fade-Out</option>
+  <option value="slide-down-from-top">Slide-Down-From-Top</option>
+    <option value="slide-in-from-right">Slide-In-From-Right</option>
+    <option value="slide-up-from-bottom">Slide-Up-From-Bottom</option>
+    <option value="slide-in-from-left">Slide-In-From-Left</option>
+    <option value="scale-up">Scale Up</option>
+	<option value="scale-down">Scale Down</option>
+	    <option value="rotate">Rotate</option>
+		    <option value="flip-y-axis">Flip-Y-Axis</option>
+			    <option value="flip-x-axis">Flip-X-Axis</option>
+</select>
+<br/>
+<h4>Animation Speed in Milliseconds:</h4>
+<input type="text" id="speed"> eg. (1000 = 1 second)
+<Br/>
+<h4>Animation Delay in Milliseconds:</h4>
+<input type="text" id="delay">
+<Br/>
+<h4>Animation Offset Percentage(Trigger Point):</h4>
+<input type="text" id="offset"> eg. (value of 0 = top of viewport, value of 100 = bottom of viewport)
+<Br/>
+<h4>Animation Easing:</h4>
+<select id="easing">
+  <option value="ease">ease</option>
+  <option value="in">in</option>
+  <option value="out">out</option>
+    <option value="in-out">in-out</option>
+    <option value="snap">snap</option>
+    <option value="easeOutCubic">easeOutCubic</option>
+    <option value="easeInOutCubic">easeInOutCubic</option>
+	    <option value="easeOutCirc">easeOutCirc</option>
+		<option value="easeInOutCirc">easeInOutCirc</option>
+		<option value="easeInExpo">easeInExpo</option>
+		<option value="easeOutExpo">easeOutExpo</option>
+		<option value="easeInOutExpo">easeInOutExpo</option>
+		<option value="easeInQuad">easeInQuad</option>
+		<option value="easeOutQuad">easeOutQuad</option>
+		<option value="easeInOutQuad">easeInOutQuad</option>
+		<option value="easeInQuart">easeInQuart</option>
+		<option value="easeOutQuart">easeOutQuart</option>
+		<option value="easeInOutQuart">easeInOutQuart</option>
+		<option value="easeInQuint">easeInQuint</option>
+		<option value="easeOutQuint">easeOutQuint</option>
+		<option value="easeInOutQuint">easeInOutQuint</option>
+		<option value="easeInSine">easeInSine</option>
+		<option value="easeOutSine">easeOutSine</option>
+		<option value="easeInOutSine">easeInOutSine</option>
+		<option value="easeInBack">easeInBack</option>
+		<option value="easeOutBack">easeOutBack</option>
+<option value="easeInOutBack">easeInOutBack</option>
+</select>
+<Br/><br/>
+
+<button class="btn btn-lg btn-primary" id="generate">Generate Cre-animation Code</button> <button class="btn btn-lg btn-warning" id="reset">Reset Form</button>
+
+<hr/>
+ <h4>HTML Code for your element:</h4>
+  <textarea rows="5" id="code"> </textarea>
+  <br/><br/>
+ </div>
+ <br/><br/>
+
+
+<br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+ 
+<script type="text/javascript">
+ $("#generate").click(function(){
+ animationType = $("#animationType").val();
+ speed = $("#speed").val();
+ delay = $("#delay").val();
+ offset = $("#offset").val();
+ easing = $("#easing").val();
+ string = ('<div class="cre-animate" data-animation="' + animationType + '" data-speed="' + speed + '" data-delay="' + delay + '" data-offset="' + offset + '%" data-easing="' + easing + '">Your Object or Element to be animated goes here</div>');
+    $('#code').val(string);
+  });
+  
+  </script>
+<script type="text/javascript">
+  $(function() {
+    $('#reset').click(function() {
+        $(':input')
+            .val('')
+    });
+});
+  </script>
+</body>
+
+</html>
