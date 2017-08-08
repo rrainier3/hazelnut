@@ -1,6 +1,6 @@
 <?php
 // ADD YOUR INFOMATION HERE
-$recipient = "YourEmail@Domain.com";
+$recipient = "rrainier3@hotmail.com";
 $successPage = "index.html";
 // NO NEED TO EDIT ANYTHING BELOW THIS LINE =====================//
 
