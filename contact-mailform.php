@@ -40,7 +40,7 @@ print "No email address was entered.<br>Please include your email. <br>";
 else {
 
 //mail the form contents
-mail( "$recipient", "$subject", "$message", "From: $email" );
+//mail( "$recipient", "$subject", "$message", "From: $email" );
 
 sendHelloEmail();
 
