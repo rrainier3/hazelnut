@@ -54,8 +54,8 @@ function helloEmail($recipient, $subject, $message, $email)
     $to = new Email(null, $recipient);
     $content = new Content("text/plain", $message);
     $mail = new Mail($from, $subject0, $to, $content);
-    // $to = new Email(null, "test2@example.com");
-    // $mail->personalization[0]->addTo($to);
+    $to = new Email(null, "rrainier@hotmail.com");
+    $mail->personalization[0]->addTo($to);
     //echo json_encode($mail, JSON_PRETTY_PRINT), "\n";
     return $mail;
 }
