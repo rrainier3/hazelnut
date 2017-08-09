@@ -35,6 +35,7 @@ print "No message was entered.<br>Please include a message.<br>";
 //if no email entered send print an error
 elseif (empty($email)){
 print "No email address was entered.<br>Please include your email. <br>";
+print($name, $email, $subject, $message)
 }
 //if the form has both an email and a message
 else {
