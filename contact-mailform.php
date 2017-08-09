@@ -20,32 +20,37 @@ $subject=stripslashes($subject);
 $message=stripslashes($message);
 $message= "Name: $name, \n\n Message: $message";
 
-/*
-Simple form validation
-check to see if an email and message were entered
-*/
-//if no message entered and no email entered print an error
-if (empty($message) && empty($email)){
-print "No email address and no message was entered. <br>Please include an email and a message";
-}
-//if no message entered send print an error
-elseif (empty($message)){
-print "No message was entered.<br>Please include a message.<br>";
-}
-//if no email entered send print an error
-elseif (empty($email)){
-print "No email address was entered.<br>Please include your email. <br>";
-print($name, $email, $subject, $message)
-}
-//if the form has both an email and a message
-else {
+echo $name;
+echo $email;
+echo $subject;
+echo $message;
 
-//mail the form contents
-//mail( "$recipient", "$subject", "$message", "From: $email" );
+// /*
+// Simple form validation
+// check to see if an email and message were entered
+// */
+// //if no message entered and no email entered print an error
+// if (empty($message) && empty($email)){
+// print "No email address and no message was entered. <br>Please include an email and a message";
+// }
+// //if no message entered send print an error
+// elseif (empty($message)){
+// print "No message was entered.<br>Please include a message.<br>";
+// }
+// //if no email entered send print an error
+// elseif (empty($email)){
+// print "No email address was entered.<br>Please include your email. <br>";
+// print($name, $email, $subject, $message)
+// }
+// //if the form has both an email and a message
+// else {
 
-sendHelloEmail($recipient, $subject, $message, $email);
+// //mail the form contents
+// //mail( "$recipient", "$subject", "$message", "From: $email" );
 
-header("Location: $successPage");
+// sendHelloEmail($recipient, $subject, $message, $email);
+
+// header("Location: $successPage");
 }
 
 function helloEmail($recipient, $subject, $message, $email)
