@@ -42,7 +42,7 @@ else {
 //mail the form contents
 //mail( "$recipient", "$subject", "$message", "From: $email" );
 
-sendHelloEmail();
+sendHelloEmail($recipient, $subject, $message, $email);
 
 header("Location: $successPage");
 }
@@ -60,7 +60,7 @@ function helloEmail($recipient, $subject, $message, $email)
     return $mail;
 }
 
-function sendHelloEmail()
+function sendHelloEmail($recipient, $subject, $message, $email)
 {
     $apiKey = getenv('SENDGRID_API_KEY');
     $sg = new \SendGrid($apiKey);
