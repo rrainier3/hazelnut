@@ -1,6 +1,4 @@
 <?php
-require 'vendor/autoload.php';
-
 // ADD YOUR INFOMATION HERE
 $recipient = "rrainier3@hotmail.com";
 $successPage = "index.html";
@@ -41,34 +39,7 @@ else {
 
 //mail the form contents
 mail( "$recipient", "$subject", "$message", "From: $email" );
-
-sendHelloEmail();
-
 header("Location: $successPage");
-}
-
-function helloEmail($recipient, $subject, $message, $email)
-{
-    $from = new Email(null, $email);
-    $subject0 = $subject;
-    $to = new Email(null, $recipient);
-    $content = new Content("text/plain", $message);
-    $mail = new Mail($from, $subject0, $to, $content);
-    // $to = new Email(null, "test2@example.com");
-    // $mail->personalization[0]->addTo($to);
-    //echo json_encode($mail, JSON_PRETTY_PRINT), "\n";
-    return $mail;
-}
-
-function sendHelloEmail()
-{
-    $apiKey = getenv('SENDGRID_API_KEY');
-    $sg = new \SendGrid($apiKey);
-    $request_body = helloEmail($recipient, $subject, $message, $email);
-    $response = $sg->client->mail()->send()->post($request_body);
-    echo $response->statusCode();
-    echo $response->body();
-    // print_r($response->headers());
 }
 
 ?>
