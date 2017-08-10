@@ -13,8 +13,9 @@ $email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 
-print("$name");
-print("$email");
+sendHelloEmail($recipient, $subject, $message, $email);
+
+header("Location: $successPage");
 
 // $name=stripslashes($name);
 // $email=stripslashes($email);
@@ -27,27 +28,27 @@ Simple form validation
 check to see if an email and message were entered
 */
 //if no message entered and no email entered print an error
-if (empty($message) && empty($email)){
-print "No email address and no message was entered. <br>Please include an email and a message 555";
-}
-//if no message entered send print an error
-elseif (empty($message)){
-print "No message was entered.<br>Please include a message. 444 <br>";
-}
-//if no email entered send print an error
-elseif (empty($email)){
-print "No email address was entered.<br>Please include your email 777. <br>";
-}
-//if the form has both an email and a message
-else {
+// if (empty($message) && empty($email)){
+// print "No email address and no message was entered. <br>Please include an email and a message 555";
+// }
+// //if no message entered send print an error
+// elseif (empty($message)){
+// print "No message was entered.<br>Please include a message. 444 <br>";
+// }
+// //if no email entered send print an error
+// elseif (empty($email)){
+// print "No email address was entered.<br>Please include your email 777. <br>";
+// }
+// //if the form has both an email and a message
+// else {
 
-//mail the form contents
-//mail( "$recipient", "$subject", "$message", "From: $email" );
-// debugHello($recipient, $subject, $message, $email);
+// //mail the form contents
+// //mail( "$recipient", "$subject", "$message", "From: $email" );
+// // debugHello($recipient, $subject, $message, $email);
 
-sendHelloEmail($recipient, $subject, $message, $email);
+// sendHelloEmail($recipient, $subject, $message, $email);
 
-header("Location: $successPage");
+// header("Location: $successPage");
 }
 
 function debugHello($recipient, $subject, $message, $email)
