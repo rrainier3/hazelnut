@@ -41,14 +41,14 @@ else {
 
 //mail the form contents
 //mail( "$recipient", "$subject", "$message", "From: $email" );
-	dumpHello($recipient, $subject, $message, $email);
+// debugHello($recipient, $subject, $message, $email);
 
-//sendHelloEmail($recipient, $subject, $message, $email);
+sendHelloEmail($recipient, $subject, $message, $email);
 
-//header("Location: $successPage");
+header("Location: $successPage");
 }
 
-function dumpHello($recipient, $subject, $message, $email)
+function debugHello($recipient, $subject, $message, $email)
 {
 	print("$recipient, $subject, $message, $email");
 }
