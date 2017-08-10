@@ -14,11 +14,11 @@ $subject = $_REQUEST['subject'];
 $message = $_REQUEST['message'];
 
 
-$name=stripslashes($name);
-$email=stripslashes($email);
-$subject=stripslashes($subject);
-$message=stripslashes($message);
-$message= "Name: $name, \n\n Message: $message";
+// $name=stripslashes($name);
+// $email=stripslashes($email);
+// $subject=stripslashes($subject);
+// $message=stripslashes($message);
+// $message= "Name: $name, \n\n Message: $message";
 
 /*
 Simple form validation
