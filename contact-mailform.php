@@ -8,10 +8,10 @@ $successPage = "index.html";
 
 
 //import form information
-$name = $_REQUEST['name'];
-$email = $_REQUEST['email'];
-$subject = $_REQUEST['subject'];
-$message = $_REQUEST['message'];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$subject = $_POST['subject'];
+$message = $_POST['message'];
 
 
 // $name=stripslashes($name);
