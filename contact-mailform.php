@@ -13,6 +13,8 @@ $email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 
+print("$name");
+print("$email");
 
 // $name=stripslashes($name);
 // $email=stripslashes($email);
