@@ -47,7 +47,7 @@ else {
 # Instantiate the client.
 $apiKey = getenv('MAILGUN_API_KEY');
 $mgClient = new Mailgun($apiKey);
-$domain = "royslawnservice.com";
+$domain = "mailgun.com";
 
 # Make the call to the client.
 $result = $mgClient->sendMessage($domain, array(
