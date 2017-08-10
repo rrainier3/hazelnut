@@ -45,7 +45,8 @@ else {
 //mail the form contents
 // mail( "$recipient", "$subject", "$message", "From: $email" );
 # Instantiate the client.
-$mgClient = new Mailgun('YOUR_API_KEY');
+$apiKey = getenv('MAILGUN_API_KEY');
+$mgClient = new Mailgun($apiKey);
 $domain = "royslawnservice.com";
 
 # Make the call to the client.
