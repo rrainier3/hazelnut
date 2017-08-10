@@ -49,7 +49,7 @@ check to see if an email and message were entered
 // sendHelloEmail($recipient, $subject, $message, $email);
 
 // header("Location: $successPage");
-}
+// }
 
 function debugHello($recipient, $subject, $message, $email)
 {
