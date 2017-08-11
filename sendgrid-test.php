@@ -19,5 +19,5 @@ $apiKey = getenv('SENDGRID_API_KEY');
 // print_r($response->headers());
 // echo $response->body();
 
-echo $apiKey
+echo $apiKey;
 
