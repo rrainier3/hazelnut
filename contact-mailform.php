@@ -1,19 +1,21 @@
 <?php
 /*SendGrid Library*/
 require_once ('vendor/autoload.php');
+
+
 /*Post Data*/
 $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 /*Content*/
-$from = new SendGrid\Email("ROYS LAWN SERVICE", "rayrainier@yahoo.com");
+$from = new Email("ROYS LAWN SERVICE", "rayrainier@yahoo.com");
 
 // $subject = "SUBJECT";
 $subject = $_POST['message'];
 
-$to = new SendGrid\Email("PAUL STANLEY", "rrainier3@hotmail.com");
+$to = new Email("PAUL STANLEY", "rrainier3@hotmail.com");
 
-$content = new SendGrid\Content("text/html", "
+$content = new Content("text/html", "
 
 Email : {$email}<br>
 Name : {$name}<br>
