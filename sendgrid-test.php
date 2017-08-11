@@ -20,3 +20,5 @@ print_r($response->headers());
 echo $response->body();
 
 print_r($response->body());
+
+?>
