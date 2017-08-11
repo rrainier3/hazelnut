@@ -15,7 +15,7 @@ $subject = $_POST['message'];
 
 $to = new SendGrid\Email("PAUL STANLEY", "rrainier3@hotmail.com");
 
-$content = new SendGrid\Content("text/html", "
+$content = new SendGrid\Content("text/plain", "
 
 Email : {$email}<br>
 Name : {$name}<br>
