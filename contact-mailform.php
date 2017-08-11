@@ -1,39 +1,20 @@
 <?php
-/*SendGrid Library*/
-require_once ('vendor/autoload.php');
+// If you are using Composer (recommended)
+require 'vendor/autoload.php';
 
+// If you are not using Composer
+// require("path/to/sendgrid-php/sendgrid-php.php");
 
-/*Post Data*/
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
-/*Content*/
-$from = new SendGrid\Email("ROYS LAWN SERVICE", "rayrainier@yahoo.com");
-
-// $subject = "SUBJECT";
-$subject = $_POST['message'];
-
-$to = new SendGrid\Email("PAUL STANLEY", "rrainier3@hotmail.com");
-
-$content = new SendGrid\Content("text/plain", "
-
-Email : {$email}<br>
-Name : {$name}<br>
-Message : {$message}
-
-	");
-
-/*Send the mail*/
+$from = new SendGrid\Email("Example User", "test@example.com");
+$subject = "Sending with SendGrid is Fun";
+$to = new SendGrid\Email("Example User", "test@example.com");
+$content = new SendGrid\Content("text/plain", "and easy to do anywhere, even with PHP");
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
-$apiKey = ('API_KEY');
-$sg = new \SendGrid($apiKey);
-/*Response*/
-$response = $sg->client->mail()->send()->post($mail);
-?>
 
-<!--Print the response-->
-<pre>
-    <?php
-    var_dump($response);
-    ?>
-</pre>
+$apiKey = getenv('SENDGRID_API_KEY');
+$sg = new \SendGrid($apiKey);
+
+$response = $sg->client->mail()->send()->post($mail);
+echo $response->statusCode();
+print_r($response->headers());
+echo $response->body();
