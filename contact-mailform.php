@@ -47,15 +47,14 @@ else {
 # Instantiate the client.
 $apiKey = getenv('MAILGUN_API_KEY');
 $mgClient = new Mailgun($apiKey);
-$domain = "herokuapp.com";
+$domain = "samples.mailgun.org";
 
 # Make the call to the client.
-$result = $mgClient->sendMessage($domain, array(
-    'from'    => 'Excited User <mailgun@' . $domain . '>',
-    'to'      => 'Baz <' . $email . '>',
-    'subject' => 'Hello',
-    'text'    => 'Testing some Mailgun awesomness!'
-));
+$result = $mgClient->sendMessage("$domain",
+  array('from'    => 'Excited User <excited@samples.mailgun.org>',
+        'to'      => 'Mailgun Devs <devs@mailgun.net>',
+        'subject' => 'Hello',
+        'text'    => 'Testing some Mailgun awesomeness!'));
 
 header("Location: $successPage");
 }
