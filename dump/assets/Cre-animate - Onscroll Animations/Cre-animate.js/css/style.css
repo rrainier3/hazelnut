@@ -1,0 +1,169 @@
+/* GOOGLE FONT IMPORT */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,900);
+
+body {
+font-family: 'Open Sans', sans-serif;
+color: #555;
+background-color: #F5F5F5;
+line-height: 1.64;
+margin: 0;
+padding-top: 100px;
+}
+a, a:visited {
+color: #1dc6df;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Open Sans', sans-serif;
+}
+
+.animation-demo {
+border-radius: 3px;
+padding: 20px 30px;
+margin-bottom: 30px;
+}
+
+ul {
+margin: 0;
+}
+
+li {
+margin-left: -60px;
+}
+
+section {
+padding-top: 80px;
+padding-bottom: 80px;
+}
+select, input, textarea {
+font-family: 'Open Sans', sans-serif;
+font-size: 16px;
+padding: 10px;
+color: #777;
+width: 400px;
+border-radius: 4px;
+border: 1px solid #E2E2E2;
+}
+input {
+width: 200px;
+}
+textarea {
+width: 90%;
+}
+
+/* =================================  */
+/* ========== ICON FEATURE BOXES STYLES ==========  */
+/* =================================  */
+
+/* === Vertical 3 Column === */
+.icon-feature-3column {
+
+}
+.icon-feature-3column i {
+font-size: 100px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+/* === Vertical 4 Column === */
+.icon-feature-4column {
+}
+.icon-feature-4column i {
+font-size: 70px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+/* === Vertical 3 Column - With Background === */
+.icon-feature-3column-alt {
+}
+.icon-feature-3column-alt i {
+font-size: 70px;
+border-radius: 100px;
+padding: 35px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+/* === Vertical 4 Column - With Background === */
+.icon-feature-4column-alt {
+}
+.icon-feature-4column-alt i {
+font-size: 50px;
+border-radius: 100px;
+padding: 25px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+/* === Horizontal 3 Column === */
+.icon-feature-3column-horizontal {
+display: table;
+}
+.icon-feature-3column-horizontal .icon {
+display: table-cell;
+padding-top: 15px;
+}
+.icon-feature-3column-horizontal .icon i {
+font-size: 40px;
+}
+.icon-feature-3column-horizontal .content {
+display: table-cell;
+vertical-align: top;
+text-align: left;
+padding-left: 20px;
+}
+/* === Horizontal 2 Column === */
+.icon-feature-2column-horizontal {
+display: table;
+}
+.icon-feature-2column-horizontal .icon {
+display: table-cell;
+padding-top: 15px;
+}
+.icon-feature-2column-horizontal .icon i {
+font-size: 60px;
+}
+.icon-feature-2column-horizontal .content {
+display: table-cell;
+vertical-align: top;
+text-align: left;
+padding-left: 30px;
+}
+/* === Horizontal 3 Column - With Background === */
+.icon-feature-3column-horizontal-alt {
+display: table;
+}
+.icon-feature-3column-horizontal-alt .icon {
+display: table-cell;
+padding-top: 15px;
+}
+.icon-feature-3column-horizontal-alt .icon i {
+border-radius: 100px;
+padding: 12px;
+font-size: 24px;
+margin-top: 0;
+margin-bottom: 20px;
+}
+.icon-feature-3column-horizontal-alt .content {
+display: table-cell;
+vertical-align: top;
+text-align: left;
+padding-left: 20px;
+}
+/* === Horizontal 2 Column - With Background === */
+.icon-feature-2column-horizontal-alt {
+display: table;
+}
+.icon-feature-2column-horizontal-alt .icon {
+display: table-cell;
+padding-top: 15px;
+}
+.icon-feature-2column-horizontal-alt .icon i {
+border-radius: 100px;
+padding: 16px;
+font-size: 32px;
+margin-top: 0;
+margin-bottom: 20px;
+}
+.icon-feature-2column-horizontal-alt .content {
+display: table-cell;
+vertical-align: top;
+text-align: left;
+padding-left: 20px;
+}
