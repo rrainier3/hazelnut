@@ -61,11 +61,12 @@ else {
 # Make the call to the client.
 $result = $mailgun->sendMessage("$domain",
   array('from'    => 'Roys Lawn Service <royslawnservice@usnurses.com>',
-        'to'      => 'Customer <$recipient>',
+        'to'      => 'Customer <' . $recipient . '>',
         'subject' => $subject,
         'text'    => $message));
 
 header("Location: $successPage");
+
 }
 
 ?>
