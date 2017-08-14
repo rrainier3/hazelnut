@@ -11,6 +11,7 @@
 //
 // If you are using Composer (recommended)
 require 'vendor/autoload.php';
+require 'lib/SendGrid.php';
 
 
 /* USER CREDENTIALS
@@ -25,8 +26,6 @@ $sg_password = "jj70yh078910";
 ====================================================*/
 $sendgrid = new SendGrid( $sg_username, $sg_password );
 $mail = new SendGrid\Email();
-
-
 
 
 /* SEND MAIL
