@@ -1,45 +1,62 @@
 <?php
-// ADD YOUR INFOMATION HERE
-$recipient = "YourEmail@Domain.com";
-$successPage = "index.html";
-// NO NEED TO EDIT ANYTHING BELOW THIS LINE =====================//
+// If you are using Composer (recommended)
+require 'vendor/autoload.php';
+require 'lib/SendGrid.php';
+
+// If you are not using Composer
+// require("path/to/sendgrid-php/sendgrid-php.php");
+
+// $from = new SendGrid\Email("Example User", "test@example.com");
+// $subject = "Sending with SendGrid is Fun";
+// $to = new SendGrid\Email("Example User", "test@example.com");
+// $content = new SendGrid\Content("text/plain", "and easy to do anywhere, even with PHP");
+// $mail = new SendGrid\Mail($from, $subject, $to, $content);
+
+// $apiKey = getenv('SENDGRID_API_KEY');
+// $sg = new \SendGrid($apiKey);
+
+// $response = $sg->client->mail()->send()->post($mail);
+// echo $response->statusCode();
+// print_r($response->headers());
+// echo $response->body();
+
+/* USER CREDENTIALS
+/  Fill in the variables below with your SendGrid
+/  username and password.
+====================================================*/
+$sg_username = "app74482290@heroku.com";
+$sg_password = "jj70yh078910";
 
 
-//import form information
-$name = $_POST['name'];
-$email = $_POST['email'];
-$subject = $_POST['subject'];
-$message = $_POST['message'];
+/* CREATE THE SENDGRID MAIL OBJECT
+====================================================*/
+$sendgrid = new SendGrid( $sg_username, $sg_password );
+$mail = new SendGrid\Email();
 
 
-$name=stripslashes($name);
-$email=stripslashes($email);
-$subject=stripslashes($subject);
-$message=stripslashes($message);
-$message= "Name: $name, \n\n Message: $message";
+/* SEND MAIL
+/  Replace the the address(es) in the setTo/setTos
+/  function with the address(es) you're sending to.
+====================================================*/
+try {
+    $mail->
+    setFrom( "rrainier3@hotmail.com" )->
+    addTo( "rayrainier@yahoo.com" )->
+    setSubject( "RE: THE INSPECTOR GENERAL WARNED ABOUT SMOKING" )->
+    setText( "Hello,\n\nThis is a test message from SendGrid.    We have sent this to you because you requested a test message be sent from your account.\n\nThis is a link to google.com: http://www.google.com\nThis is a link to apple.com: http://www.apple.com\nThis is a link to sendgrid.com: http://www.sendgrid.com\n\nThank you for reading this test message.\n\nLove,\nYour friends at SendGrid" )->
+    setHtml( "<table style=\"border: solid 1px #000; background-color: #666; font-family: verdana, tahoma, sans-serif; color: #fff;\"> <tr> <td> <h2>Hello,</h2> <p>This is a test message from SendGrid.    We have sent this to you because you requested a test message be sent from your account.</p> <a href=\"http://www.google.com\" target=\"_blank\">This is a link to google.com</a> <p> <a href=\"http://www.apple.com\" target=\"_blank\">This is a link to apple.com</a> <p> <a href=\"http://www.sendgrid.com\" target=\"_blank\">This is a link to sendgrid.com</a> </p> <p>Thank you for reading this test message.</p> Love,<br/> Your friends at SendGrid</p> <p> <img src=\"http://cdn1.sendgrid.com/images/sendgrid-logo.png\" alt=\"SendGrid!\" /> </td> </tr> </table>" );
+    
+    $response = $sendgrid->send( $mail );
 
-/*
-Simple form validation
-check to see if an email and message were entered
-*/
-//if no message entered and no email entered print an error
-if (empty($message) && empty($email)){
-print "No email address and no message was entered. <br>Please include an email and a message";
-}
-//if no message entered send print an error
-elseif (empty($message)){
-print "No message was entered.<br>Please include a message.<br>";
-}
-//if no email entered send print an error
-elseif (empty($email)){
-print "No email address was entered.<br>Please include your email. <br>";
-}
-//if the form has both an email and a message
-else {
-
-//mail the form contents
-mail( "$recipient", "$subject", "$message", "From: $email" );
-header("Location: $successPage");
+    if (!$response) {
+        throw new Exception("Did not receive response.");
+    } else if ($response->message && $response->message == "error") {
+        throw new Exception("Received error: ".join(", ", $response->errors));
+    } else {
+        print_r($response);
+    }
+} catch ( Exception $e ) {
+    var_export($e);
 }
 
 ?>
