@@ -12,7 +12,7 @@ $domain = "sandboxbf951da5d01741feaf8cd9c343aca27b.mailgun.org";
 $result = $mailgun->sendMessage($domain, array(
     'from'    => 'Excited User <rrainier@hotmail.com>',
     'to'      => 'Baz <rayrainier@yahoo.com>',
-    'subject' => 'Hello',
+    'subject' => 'RE: Questions on Construction Billing Invoices',
     'text'    => 'Testing some Mailgun blah blah!'
 ));
 
