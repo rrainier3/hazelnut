@@ -1,3 +1,5 @@
 vendor/
-dump/
-sendgrid.env
+contact-mailform.php
+mailgunx.php
+contact-mailform-mg.php
+
