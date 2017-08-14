@@ -11,7 +11,7 @@ $domain = "example.com";
 # Make the call to the client.
 $result = $mgClient->sendMessage($domain, array(
     'from'    => 'Excited User <rrainier@hotmail.com>',
-    'to'      => 'Baz <rayrainier@yahoo.com',
+    'to'      => 'Baz <rayrainier@yahoo.com>',
     'subject' => 'Hello',
     'text'    => 'Testing some Mailgun blah blah!'
 ));
