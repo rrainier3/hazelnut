@@ -9,7 +9,7 @@ echo "Successfully instantiated mailgun!"
 $domain = "example.com";
 
 # Make the call to the client.
-$result = $mgClient->sendMessage($domain, array(
+$result = $mailgun->sendMessage($domain, array(
     'from'    => 'Excited User <rrainier@hotmail.com>',
     'to'      => 'Baz <rayrainier@yahoo.com>',
     'subject' => 'Hello',
