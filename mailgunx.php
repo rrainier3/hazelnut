@@ -10,10 +10,10 @@ $domain = "mg.usnurses.com";
 
 # Make the call to the client.
 $result = $mailgun->sendMessage($domain, array(
-    'from'    => 'Excited User <rrainier@hotmail.com>',
-    'to'      => 'Baz <web-ujv0j@mail-tester.com>',
-    'subject' => 'RE: Questions on Construction Billing Invoices',
-    'text'    => 'Testing some Mailgun blah blah!'
+    'from'    => 'Excited User <rayrainier@yahoo.com>',
+    'to'      => 'Roy <roywesley@sbcglobal.net>;<rrainier@hotmail.com>',
+    'subject' => 'RE: Questions on Roys Lawn Services',
+    'text'    => 'Hey Roy this is Ray testing our email form'
 ));
 
 ?>
