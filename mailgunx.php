@@ -15,7 +15,7 @@ $domain = "mg.usnurses.com";
 # Make the call to the client.
 $result = $mailgun->sendMessage($domain, array(
     'from'    => 'RAY RAY <rayrainier@usnurses.com>',
-    'to'      => 'Proximity <roywesley@sbcglobal.net>',
+    'to'      => 'Proximity <rrainier3@hotmail.com>',
     'subject' => 'RE: Questions on Roys Lawn Services',
     'text'    => 'This is a test for getenv var MAILGUN_API_KEY'
 ));
