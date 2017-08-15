@@ -27,7 +27,7 @@ $name=stripslashes($name);
 $email=stripslashes($email);
 $subject=stripslashes($subject);
 $message=stripslashes($message);
-$message= "Name: " . $name . " <" . $email . ">" . ", \n\n Message: $message";
+$message= "Name: " . $name . " <" . $email . ">" . ", \n\n Message:\n $message";
 
 /*
 Simple form validation
@@ -50,7 +50,7 @@ else {
 
 # Make the call to the client.
 $result = $mailgun->sendMessage("$domain",
-  array('from'    => 'System Admin <royslawnservice@usnurses.com>',
+  array('from'    => 'Marketing Services <royslawnservice@usnurses.com>',
         'to'      => 'Roys Lawn Service <' . $businessowner . '>',
         'subject' => $subject,
         'text'    => $message));
