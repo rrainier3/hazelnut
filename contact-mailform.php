@@ -11,7 +11,7 @@ $mailgun = new Mailgun($mg_api_key);
 $domain = "mg.usnurses.com";
 
 // ADD OWNER INFOMATION HERE
-$businessowner = "rrainier3@hotmail.com";
+$businessowner = "roywesley@sbcglobal.net";
 $successPage = "index.html";
 // NO NEED TO EDIT ANYTHING BELOW THIS LINE =====================//
 
