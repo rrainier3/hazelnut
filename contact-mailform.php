@@ -27,7 +27,7 @@ $name=stripslashes($name);
 $email=stripslashes($email);
 $subject=stripslashes($subject);
 $message=stripslashes($message);
-$message= "Name: " . $name . " <" . $email . ">" . ", \n\n Message:\n $message";
+$message= "Name: " . $name . " <" . $email . ">" . ",\n\nMessage:\n$message";
 
 /*
 Simple form validation
